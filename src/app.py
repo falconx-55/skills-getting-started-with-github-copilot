@@ -20,6 +20,7 @@ app.mount("/static", StaticFiles(directory=os.path.join(Path(__file__).parent,
           "static")), name="static")
 
 # In-memory activity database
+
 activities = {
     "Chess Club": {
         "description": "Learn strategies and compete in chess tournaments",
@@ -28,6 +29,42 @@ activities = {
         "participants": ["michael@mergington.edu", "daniel@mergington.edu"]
     },
     "Programming Class": {
+        "Basketball": {
+            "description": "Team sport focusing on basketball skills and game strategy",
+            "schedule": "Mondays and Wednesdays, 4:00 PM - 5:30 PM",
+            "max_participants": 15,
+            "participants": ["alex@mergington.edu"]
+            },
+            "Volleyball": {
+            "description": "Competitive volleyball team and recreational play",
+            "schedule": "Tuesdays and Thursdays, 4:00 PM - 5:30 PM",
+            "max_participants": 18,
+            "participants": ["jessica@mergington.edu"]
+            },
+            "Art Club": {
+            "description": "Explore painting, drawing, and various art mediums",
+            "schedule": "Wednesdays, 3:30 PM - 5:00 PM",
+            "max_participants": 16,
+            "participants": ["isabella@mergington.edu"]
+            },
+            "Music Ensemble": {
+            "description": "Orchestra and band performance group",
+            "schedule": "Mondays and Fridays, 4:00 PM - 5:30 PM",
+            "max_participants": 25,
+            "participants": ["noah@mergington.edu", "ava@mergington.edu"]
+            },
+            "Debate Team": {
+            "description": "Competitive debate and public speaking development",
+            "schedule": "Tuesdays, 3:30 PM - 5:00 PM",
+            "max_participants": 14,
+            "participants": ["ethan@mergington.edu"]
+            },
+            "Robotics Club": {
+            "description": "Build and program robots for competitions",
+            "schedule": "Thursdays, 3:30 PM - 5:30 PM",
+            "max_participants": 20,
+            "participants": ["liam@mergington.edu", "mia@mergington.edu"]
+            },
         "description": "Learn programming fundamentals and build software projects",
         "schedule": "Tuesdays and Thursdays, 3:30 PM - 4:30 PM",
         "max_participants": 20,
